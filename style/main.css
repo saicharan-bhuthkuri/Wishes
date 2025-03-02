@@ -1,0 +1,215 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fbc2eb, #a18cd1);
+  background-size: 400% 400%;
+  animation: gradientBG 10s ease infinite;
+  position: relative;
+}
+
+body::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.4) 10%, rgba(0, 0, 0, 0) 80%);
+  pointer-events: none;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.song {
+  visibility: hidden;
+}
+
+.container {
+  height: 100vh;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  visibility: hidden;
+  width: 100vw;
+}
+
+.container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 10%, rgba(0, 0, 0, 0) 80%);
+  pointer-events: none;
+}
+
+.container > div {
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 20vh;
+}
+
+.one {
+  font-size: 4.5rem;
+}
+
+.two {
+  font-size: 1.2rem;
+  font-weight: lighter;
+}
+
+.three {
+  font-size: 3rem;
+}
+
+.four .text-box {
+  border: 3px solid rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+  width: 600px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.text-box p {
+  margin: 0;
+  text-align: left;
+  color: #000000;
+}
+
+.text-box span {
+  visibility: hidden;
+}
+
+.text-box .fake-btn {
+  background-color: rgb(21, 161, 237);
+  border-radius: 3px;
+  bottom: -50px;
+  color: #fff;
+  padding: .5rem 1rem;
+  position: absolute;
+  right: 5px;
+}
+
+.five p {
+  font-size: 2rem;
+  left: 0;
+  position: absolute;
+  right: 0;
+}
+
+.idea-3 strong {
+  border-radius: 3px;
+  display: inline-block;
+  padding: 3px 5px;
+}
+
+.five .idea-5 {
+  font-size: 4rem;
+  animation: textGlow 2s ease-in-out infinite alternate;
+}
+
+@keyframes textGlow {
+  0% {
+    text-shadow: 0 0 10px #ff4081, 0 0 20px #ff4081, 0 0 30px #ff4081;
+  }
+  100% {
+    text-shadow: 0 0 20px #ff80ab, 0 0 40px #ff80ab, 0 0 60px #ff80ab;
+  }
+}
+
+.idea-5 span, .idea-6 span, .wish-hbd span {
+  display: inline-block;
+}
+
+.idea-6 span{
+  font-size: 15rem;
+}
+
+.six {
+  position: relative;
+  top: 10vh;
+  z-index: 1;
+}
+
+.six img {
+  display: inline-block;
+  height: 350px;
+  max-width: 100%;
+}
+
+.six .hat {
+  left: 46.5%;
+  position: absolute;
+  top: -36%;
+  width: 60px;
+}
+
+.baloons img {
+  display: inline-block;
+  position: absolute;
+}
+
+.baloons img:nth-child(even) {
+  left: -10%;
+}
+
+.baloons img:nth-child(odd) {
+  right: -10%;
+}
+
+.baloons img:nth-child(3n + 0) {
+  left: 30%;
+}
+
+.seven, .eight {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+}
+
+.eight svg {
+  left: 0;
+  position: absolute;
+  top: 0;
+  visibility: hidden;
+  width: 25px;
+  z-index: -1;
+}
+
+.wish-hbd {
+  font-size: 3em;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.wish h5 {
+  font-size: 2rem;
+  font-weight: lighter;
+  margin: 10px 0 0;
+}
+
+.nine p {
+  font-size: 2rem;
+  font-weight: lighter;
+}
+
+#replay {
+  cursor: pointer;
+  z-index: 3;
+}
