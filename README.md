@@ -29,10 +29,7 @@ A demo of the project is available in the **demo video/** folder.
 ### 📺 Watch the Demo Video:  
 [🎥 Click here to watch on GitHub](https://github.com/saicharan-bhuthkuri/Wishes/raw/main/demo%20video/birthday.mp4)  
 
-> If the video doesn’t play, download it and watch it locally.  
-
-### 📌 Watch on Instagram  
-[📸 Click here to watch on Instagram](https://www.instagram.com/p/YOUR_POST_ID/)  
+> If the video doesn’t play, download it and watch it locally.
 
 ## 🚀 How to Run  
 1. Clone the repositor
