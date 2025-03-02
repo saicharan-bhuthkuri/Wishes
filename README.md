@@ -25,8 +25,10 @@ A simple and fun birthday wishes webpage with a personalized greeting.
 ```
 ## 🎬 Demo Video  
 A demo of the project is available in the **demo video/** folder, also check here👇
-[Click here to watch the demo video](https://github.com/saicharan-bhuthkuri/Wishes/blob/main/demo%20video/birthday.mp4)
-
+<video width="600" controls>
+  <source src="https://github.com/saicharan-bhuthkuri/Wishes/blob/main/demo%20video/birthday.mp4">
+  Your browser does not support the video tag.
+</video>
 ## 🚀 How to Run  
 1. Clone the repositor
 ```bash
